@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<WwiseSettings>
+    <CreateWwiseGlobal>true</CreateWwiseGlobal>
+    <CreateWwiseListener>true</CreateWwiseListener>
+    <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
+    <WwiseProjectPath>../GDS-Jam-2020_WwiseProject/GDS-Jam-2020_WwiseProject.wproj</WwiseProjectPath>
+    <WwiseInstallationPathWindows>D:\Logiciels random\Audiokinetic\Wwise 2019.2.7.7402</WwiseInstallationPathWindows>
+    <WwiseInstallationPathMac></WwiseInstallationPathMac>
+</WwiseSettings>
