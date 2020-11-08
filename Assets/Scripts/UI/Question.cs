@@ -57,7 +57,7 @@ public class Question : MonoBehaviour
                 answers[i].GetComponent<Image>().color = Color.red;
             answers[i].GetComponent<Button>().enabled = false;
         }
-        answeredQuestion.Invoke(true);
+        Invoke("CorrectDestroy", 2);
     }
 
     void WrongAnswer()
@@ -71,6 +71,18 @@ public class Question : MonoBehaviour
                 answers[i].GetComponent<Image>().color = Color.red;
             answers[i].GetComponent<Button>().enabled = false;
         }
+        Invoke("IncorrectDestroy", 1.5f);
+    }
+
+    void CorrectDestroy()
+    {
+        answeredQuestion.Invoke(true);
+        Destroy(gameObject);
+    }
+
+    void IncorrectDestroy()
+    {
         answeredQuestion.Invoke(false);
+        Destroy(gameObject);
     }
 }

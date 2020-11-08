@@ -7,13 +7,13 @@ using UnityEngine.Events;
 public class WordQTE : MonoBehaviour
 {
     public Text content;
-    public string text;
+    public string text = "";
     public float duration;
     public float fadeDuration;
     public Color correctColor;
     public Color incorrectColor;
 
-    public UnityEvent onValidated;
+    public UnityEvent<bool> onEnded;
 
     private string m_currentText = ""; 
 
@@ -54,6 +54,7 @@ public class WordQTE : MonoBehaviour
                     StartCoroutine("FadeOut");
             }
         }
+        onEnded.Invoke(false);
         Destroy(gameObject);
     }
 
@@ -105,7 +106,8 @@ public class WordQTE : MonoBehaviour
     {
         if (text.ToLower() == m_currentText.ToLower())
         {
-            onValidated.Invoke();
+            onEnded.Invoke(true);
+            Destroy(gameObject);
         }
         else if (m_currentText.Length > text.Length || text.ToLower().Substring(0, m_currentText.Length) != m_currentText.ToLower())
         {

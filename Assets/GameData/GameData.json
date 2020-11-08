@@ -17,185 +17,254 @@
       ],
       "morningInfos": [
         {
-          "text": "some info",
-          "bubbleType": "normal"
+          "text": "Greetings. Are you holding up in your disguise? This mission is a first for our kind. Don't fail.",
+          "bubbleType": "phone"
         },
         {
-          "text": "thinking info",
-          "bubbleType": "thinking"
+          "text": "So here's the situation: you'll have to distract them while we get everything ready for the invasion",
+          "bubbleType": "phone"
         },
         {
-          "text": "phone info",
+          "text": "In the morning you will have to go to meetings. We don't really  know what they are for but humans like them. Say anything that goes through your mind. But don't be suspicious.",
+          "bubbleType": "phone"
+        },
+        {
+          "text": "In the evening you will have interviews. Humans will ask you all sorts of questions. Don't worry, we will give you every info we gather in the morning, before your meetings. Don't forget them.",
+          "bubbleType": "phone"
+        },
+        {
+          "text": "Humans will probably notice a change in the appearance of their president. Our research shows that humans like to damage their skin by staying still under direct sunbeams. It changes the color of their skin. Remember that.",
+          "bubbleType": "phone"
+        },
+        {
+          "text": "The success of our mission depends on you. Good Luck. *Clic*",
           "bubbleType": "phone"
         }
       ],
+
       "afterInfos": [
         {
-          "text": "some after",
-          "bubbleType": "normal"
-        },
-        {
-          "text": "thinking after",
+          "text": "Let's do this",
           "bubbleType": "thinking"
-        },
-        {
-          "text": "phone after",
-          "bubbleType": "phone"
         }
       ],
       "meeting": {
         "beforeMeeting": [
           {
-            "text": "BLAH BLAH BLAH",
-            "bubbleType": "normal"
+            "text": "I have to do this right. If I say something wrong, they will find everything out. If a word appears in red, I need to type that on the keyboard... On we go. ",
+            "bubbleType": "thinking"
           }
         ],
         "qtes": [
           {
             "beforeQTE": [
               {
-                "text": "BLAH BLAH BLAH",
+                "text": "My dear fellow",
                 "bubbleType": "normal"
               }
             ],
-            "qte": "Le texte QTE ici",
+            "qte": "citizen",
             "time": 10,
             "afterGoodQTE": [
               {
-                "text": "BLAH BLAH BLAH",
+                "text": "I hear your demand! You all know I went to Area 51, and you asked if I met another form of life there.",
                 "bubbleType": "normal"
               }
             ],
             "afterBadQTE": [
               {
-                "text": "BLAH BLAH BLAH",
-                "bubbleType": "normal"
+                "text": "What?",
+                "bubbleType": "human"
+              },
+              {
+                "text": "I meant... Erm... I hear your demand! You all know I went to Area 51, and you asked if I met another form of life there."
               }
             ]
           },
           {
             "beforeQTE": [
               {
-                "text": "BLAH BLAH BLAH",
+                "text": "I will tell you, once and for all...",
+                "bubbleType": "normal"
+              },
+              {
+                "text": "I DON'T REMEMBER!",
+                "bubbleType": "normal"
+              },
+              {
+                "text": "I really don't",
                 "bubbleType": "normal"
               }
             ],
-            "qte": "Un second QTE",
+            "qte": "remember",
             "time": 10,
             "afterGoodQTE": [
               {
-                "text": "BLAH BLAH BLAH",
+                "text": "it just slipped out of my mind...",
+                "bubbleType": "normal"
+              },
+              {
+                "text": "...but I do know that it was a very pleasant walk! Walking is very good for your health. Erm... Isn't it lunch time?",
                 "bubbleType": "normal"
               }
             ],
             "afterBadQTE": [
               {
-                "text": "BLAH BLAH BLAH",
+                "text": "What ?",
+                "bubbleType": "human"
+              },
+              {
+                "text": "I meant... Erm... It just slipped out of my mind....",
+                "bubbleType": "normal"
+              },
+              {
+                "text": "...but I do know that it was a very pleasant walk! Walking is very good for your health. Erm... Isn't it lunch time?",
                 "bubbleType": "normal"
               }
             ]
+
           }
         ],
         "afterMeeting": [
           {
-            "text": "BLAH BLAH BLAH",
-            "bubbleType": "normal"
+            "text": "Phew... Let's be careful. Tonight I am being interviewed. They are going to ask questions. Better be prepared.",
+            "bubbleType": "thinking"
           }
         ]
       },
       "interview": {
         "beforeInterview": [
           {
-            "text": "BLAH BLAH BLAH",
-            "bubbleType": "normal"
+            "text": "This human seems to be a fan of the president. It won't be difficult to convince him of anything.",
+            "bubbleType": "thinking"
           }
         ],
         "questions": [
           {
             "beforeQuestion": [
               {
-                "text": "BLAH BLAH BLAH",
-                "bubbleType": "normal"
+                "text": "Tonight we welcome Mr President! Your morning speech was highly disconcerting! What happened when you visited Area 51?",
+                "bubbleType": "human"
               }
             ],
-            "question": "La question 1 ici",
+            "question": "What happened when you visited Area 51?",
             "answers": [
-              "Reponse 1",
-              "Reponse 2",
-              "Reponse 3",
-              "Reponse 4"
+              "I forgot",
+              "I think I saw something...",
+              "We are aliens, here to invade earth",
+              "Erm..."
             ],
             "correctAnswerIndex": 0,
             "time": 10,
             "afterGoodAnswer": [
               {
-                "text": "BLAH BLAH BLAH",
+                "text": "I really don't remember anything special. Probably because nothing happened!",
                 "bubbleType": "normal"
               }
             ],
             "afterBadAnswer": [
               {
-                "text": "BLAH BLAH BLAH",
-                "bubbleType": "normal"
+                "text": "Huh ?",
+                "bubbleType": "human"
               }
             ],
             "qte": {
               "beforeQTE": [
                 {
-                  "text": "BLAH BLAH BLAH",
+                  "text": "Uh, it's not what I meant! I meant, I",
                   "bubbleType": "normal"
                 }
               ],
-              "qte": "Le texte QTE ici",
+              "qte": "forgot",
               "time": 10,
               "afterGoodQTE": [
                 {
-                  "text": "BLAH BLAH BLAH",
+                  "text": "Ahah... Actually, I really don't remember anything special. Probably because nothing happened!",
                   "bubbleType": "normal"
                 }
               ],
               "afterBadQTE": [
                 {
-                  "text": "BLAH BLAH BLAH",
+                  "text": "Are you alright?",
+                  "bubbleType": "human"
+                },
+                {
+                  "text": "Ahah... Actually, I really don't remember anything special. Probably because nothing happened!",
                   "bubbleType": "normal"
+                },
+                {
+                  "text": "I need to be careful...",
+                  "bubbleType": "thinking"
                 }
+
               ]
             }
           },
           {
             "beforeQuestion": [
               {
-                "text": "BLAH BLAH BLAH",
-                "bubbleType": "normal"
+                "text": "I see... Erm... If I may ask... Your skin seems different than usual, has it something to do with Area 51?",
+                "bubbleType": "human"
               }
             ],
-            "question": "La question 2 ici",
+            "question": "Why is your skin different than usual?",
             "answers": [
-              "Reponse 1",
-              "Reponse 2",
-              "Reponse 3",
-              "Reponse 4"
+              "Because of the sun",
+              "I am an alien",
+              "I don't understand",
+              "I am a little ill"
             ],
             "correctAnswerIndex": 0,
             "time": 10,
             "afterGoodAnswer": [
               {
-                "text": "BLAH BLAH BLAH",
+                "text": "It's probably because of the sun. I think I tanned a little. You know how we, humans, love walking in the sun...",
                 "bubbleType": "normal"
               }
             ],
             "afterBadAnswer": [
               {
-                "text": "BLAH BLAH BLAH",
-                "bubbleType": "normal"
+                "text": "Really?",
+                "bubbleType": "human"
               }
-            ]
+            ],
+            "qte": {
+              "beforeQTE": [
+                {
+                  "text": "Uh, it's not what I meant! I meant, I",
+                  "bubbleType": "normal"
+                }
+              ],
+              "qte": "tanned",
+              "time": 10,
+              "afterGoodQTE": [
+                {
+                  "text": "It's probably because of the sun. I think I tanned a little. You know how we, humans, love walking in the sun...",
+                  "bubbleType": "normal"
+                }
+              ],
+              "afterBadQTE": [
+                {
+                  "text": "Are you alright?",
+                  "bubbleType": "human"
+                },
+                {
+                  "text": "Erm... It's probably because of the sun. I think I tanned a little. You know how we, humans, love walking in the sun...",
+                  "bubbleType": "normal"
+                },
+                {
+                  "text": "I need to be careful...",
+                  "bubbleType": "thinking"
+                }
+
+              ]
+            }
           }
         ],
         "afterInterview": [
           {
-            "text": "BLAH BLAH BLAH",
-            "bubbleType": "normal"
+            "text": "Thank you for coming, Mr President. I hope you join us tomorrow! Ladies and gentlemen thank you for watching us, goodnight!",
+            "bubbleType": "human"
           }
         ]
       }
