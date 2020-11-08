@@ -26,3 +26,14 @@ public class SpeechBubble : MonoBehaviour
         }
     }
 }
+
+public class TriggerOnSpeak : AkTriggerBase
+{
+    void Speak()
+    {
+        if (triggerDelegate != null)
+        {
+            triggerDelegate(null);
+        }
+    }
+}

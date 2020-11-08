@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 4735215679568501777}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4735215680024501355}
   m_RootOrder: 0
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: -1628224912532618644}
   - component: {fileID: 4482002019466533495}
   m_Layer: 5
-  m_Name: Speech Bubble
+  m_Name: Human Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109,7 +109,7 @@ RectTransform:
   m_GameObject: {fileID: 4735215680024501354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 4735215679568501778}
   m_Father: {fileID: 0}

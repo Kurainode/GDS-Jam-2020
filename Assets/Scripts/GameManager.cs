@@ -10,11 +10,17 @@ public class GameManager : MonoBehaviour
     public GameObject speechBubble;
     public GameObject telephoneBubble;
     public GameObject thinkingBubble;
+    public GameObject humanBubble;
     public GameObject textQTE;
     public GameObject question;
 
     public GameObject background;
     public GameObject president;
+    public GameObject closePresident;
+
+    public Transform interviewBubbleArea;
+    public Transform meetingBubbleArea;
+    public Transform humanBubbleArea;
 
     public TextAsset gameData;
 
@@ -23,6 +29,7 @@ public class GameManager : MonoBehaviour
     private string[] m_presidents = { "Neutral", "Anxious", "Monstrous", "Monstrous2", "Telephone" };
 
     private bool m_hasClicked = false;
+    private bool m_closePresident = false;
 
     void Start()
     {
@@ -42,39 +49,41 @@ public class GameManager : MonoBehaviour
         foreach (Day day in m_gameData.days)
         {
             SetBackground("Morning");
+            m_closePresident = false;
             SetPresident("Neutral");
             foreach (TalkData talk in day.beforeInfos)
             {
-                GameObject bubble = CreateSpeechBubble(talk);
+                GameObject bubble = CreateSpeechBubble(talk, meetingBubbleArea);
                 yield return new WaitUntil(() => m_hasClicked);
                 yield return new WaitForSeconds(0.1f);
                 Destroy(bubble);
             }
 
-            // TODO: Answer phone call
+
+            SetPresident("Phone");
             foreach (TalkData talk in day.morningInfos)
             {
-                GameObject bubble = CreateSpeechBubble(talk);
+                GameObject bubble = CreateSpeechBubble(talk, meetingBubbleArea);
                 yield return new WaitUntil(() => m_hasClicked);
                 yield return new WaitForSeconds(0.1f);
                 Destroy(bubble);
             }
 
-            // TODO: Hang up phone call
+            SetPresident("Neutral");
             foreach (TalkData talk in day.afterInfos)
             {
-                GameObject bubble = CreateSpeechBubble(talk);
+                GameObject bubble = CreateSpeechBubble(talk, meetingBubbleArea);
                 yield return new WaitUntil(() => m_hasClicked);
                 yield return new WaitForSeconds(0.1f);
                 Destroy(bubble);
             }
 
             // TODO: Transition
-
+            SetPresident("Neutral");
             SetBackground("Meeting");
             foreach (TalkData talk in day.meeting.beforeMeeting)
             {
-                GameObject bubble = CreateSpeechBubble(talk);
+                GameObject bubble = CreateSpeechBubble(talk, meetingBubbleArea);
                 yield return new WaitUntil(() => m_hasClicked);
                 yield return new WaitForSeconds(0.1f);
                 Destroy(bubble);
@@ -87,7 +96,7 @@ public class GameManager : MonoBehaviour
 
             foreach (TalkData talk in day.meeting.afterMeeting)
             {
-                GameObject bubble = CreateSpeechBubble(talk);
+                GameObject bubble = CreateSpeechBubble(talk, meetingBubbleArea);
                 yield return new WaitUntil(() => m_hasClicked);
                 yield return new WaitForSeconds(0.1f);
                 Destroy(bubble);
@@ -95,10 +104,12 @@ public class GameManager : MonoBehaviour
 
             // TODO: Transition
 
+            m_closePresident = true;
+            SetPresident("Neutral");
             SetBackground("Interview");
             foreach (TalkData talk in day.interview.beforeInterview)
             {
-                GameObject bubble = CreateSpeechBubble(talk);
+                GameObject bubble = CreateSpeechBubble(talk, interviewBubbleArea);
                 yield return new WaitUntil(() => m_hasClicked);
                 yield return new WaitForSeconds(0.1f);
                 Destroy(bubble);
@@ -111,7 +122,7 @@ public class GameManager : MonoBehaviour
 
             foreach (TalkData talk in day.interview.afterInterview)
             {
-                GameObject bubble = CreateSpeechBubble(talk);
+                GameObject bubble = CreateSpeechBubble(talk, interviewBubbleArea);
                 yield return new WaitUntil(() => m_hasClicked);
                 yield return new WaitForSeconds(0.1f);
                 Destroy(bubble);
@@ -136,24 +147,37 @@ public class GameManager : MonoBehaviour
         int childCount = president.transform.childCount;
         for (int i = 0; i < childCount; ++i)
         {
-            if (president.transform.GetChild(i).name == name)
+            if (president.transform.GetChild(i).name == name && !m_closePresident)
                 president.transform.GetChild(i).gameObject.SetActive(true);
             else
                 president.transform.GetChild(i).gameObject.SetActive(false);
         }
+        childCount = closePresident.transform.childCount;
+        for (int i = 0; i < childCount; ++i)
+        {
+            if (closePresident.transform.GetChild(i).name == name && m_closePresident)
+                closePresident.transform.GetChild(i).gameObject.SetActive(true);
+            else
+                closePresident.transform.GetChild(i).gameObject.SetActive(false);
+        }
     }
 
-    public GameObject CreateSpeechBubble(TalkData talk)
+    public GameObject CreateSpeechBubble(TalkData talk, Transform master)
     {
         GameObject toInstanciate;
         if (talk.bubbleType == "phone")
             toInstanciate = telephoneBubble;
         else if (talk.bubbleType == "normal")
             toInstanciate = speechBubble;
-        else
+        else if (talk.bubbleType == "thinking")
             toInstanciate = thinkingBubble;
+        else
+        {
+            master = humanBubbleArea;
+            toInstanciate = humanBubble;
+        }
 
-        GameObject bubbleObject = Instantiate(toInstanciate, canvas.transform);
+        GameObject bubbleObject = Instantiate(toInstanciate, master);
         SpeechBubble bubble = bubbleObject.GetComponent<SpeechBubble>();
         bubble.text = talk.text;
 

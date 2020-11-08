@@ -3,51 +3,42 @@
     {
       "beforeInfos": [
         {
-          "speaker": "president",
           "text": "some text",
           "bubbleType": "normal"
         },
         {
-          "speaker": "president",
           "text": "thinking text",
           "bubbleType": "thinking"
         },
         {
-          "speaker": "president",
           "text": "phone text",
           "bubbleType": "phone"
         }
       ],
       "morningInfos": [
         {
-          "speaker": "president",
           "text": "some info",
           "bubbleType": "normal"
         },
         {
-          "speaker": "president",
           "text": "thinking info",
           "bubbleType": "thinking"
         },
         {
-          "speaker": "president",
           "text": "phone info",
           "bubbleType": "phone"
         }
       ],
       "afterInfos": [
         {
-          "speaker": "president",
           "text": "some after",
           "bubbleType": "normal"
         },
         {
-          "speaker": "president",
           "text": "thinking after",
           "bubbleType": "thinking"
         },
         {
-          "speaker": "president",
           "text": "phone after",
           "bubbleType": "phone"
         }
@@ -55,7 +46,6 @@
       "meeting": {
         "beforeMeeting": [
           {
-            "speaker": "president",
             "text": "BLAH BLAH BLAH",
             "bubbleType": "normal"
           }
@@ -63,7 +53,6 @@
         "qtes": [],
         "afterMeeting": [
           {
-            "speaker": "president",
             "text": "BLAH BLAH BLAH",
             "bubbleType": "normal"
           }
@@ -72,7 +61,6 @@
       "interview": {
         "beforeInterview": [
           {
-            "speaker": "president",
             "text": "BLAH BLAH BLAH",
             "bubbleType": "normal"
           }
@@ -80,7 +68,6 @@
         "questions": [],
         "afterInterview": [
           {
-            "speaker": "president",
             "text": "BLAH BLAH BLAH",
             "bubbleType": "normal"
           }
