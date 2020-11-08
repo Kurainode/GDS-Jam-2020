@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 4735215680024501270}
   - component: {fileID: -3188536981446075911}
   - component: {fileID: -5935635472167169667}
+  - component: {fileID: -6155035936390516337}
   m_Layer: 5
   m_Name: Thinking Bubble
   m_TagString: Untagged
@@ -228,3 +229,15 @@ MonoBehaviour:
   multiPositionTypeLabel: 0
   LargeModePositions: []
   multiPositionArray: []
+--- !u!114 &-6155035936390516337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4735215680024501354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2fc4b9278ed4a468800c5e02ffe3bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
