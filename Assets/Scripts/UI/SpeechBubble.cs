@@ -21,11 +21,11 @@ public class SpeechBubble : MonoBehaviour
     {
         if (m_carret < text.Length)
         {
-            int old = (int)m_carret;
+            //int old = (int)m_carret;
             m_carret += Time.deltaTime * textSpeed;
             content.text = text.Substring(0, (int)m_carret);
-            if (old < (int)m_carret)
-                GetComponent<TriggerOnSpeak>().Speak();
+            //if (old < (int)m_carret)
+            //    GetComponent<TriggerOnSpeak>().Speak();
         }
     }
 }

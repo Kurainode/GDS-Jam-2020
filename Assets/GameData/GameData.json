@@ -50,7 +50,52 @@
             "bubbleType": "normal"
           }
         ],
-        "qtes": [],
+        "qtes": [
+          {
+            "beforeQTE": [
+              {
+                "text": "BLAH BLAH BLAH",
+                "bubbleType": "normal"
+              }
+            ],
+            "qte": "Le texte QTE ici",
+            "time": 10,
+            "afterGoodQTE": [
+              {
+                "text": "BLAH BLAH BLAH",
+                "bubbleType": "normal"
+              }
+            ],
+            "afterBadQTE": [
+              {
+                "text": "BLAH BLAH BLAH",
+                "bubbleType": "normal"
+              }
+            ]
+          },
+          {
+            "beforeQTE": [
+              {
+                "text": "BLAH BLAH BLAH",
+                "bubbleType": "normal"
+              }
+            ],
+            "qte": "Un second QTE",
+            "time": 10,
+            "afterGoodQTE": [
+              {
+                "text": "BLAH BLAH BLAH",
+                "bubbleType": "normal"
+              }
+            ],
+            "afterBadQTE": [
+              {
+                "text": "BLAH BLAH BLAH",
+                "bubbleType": "normal"
+              }
+            ]
+          }
+        ],
         "afterMeeting": [
           {
             "text": "BLAH BLAH BLAH",
@@ -65,7 +110,88 @@
             "bubbleType": "normal"
           }
         ],
-        "questions": [],
+        "questions": [
+          {
+            "beforeQuestion": [
+              {
+                "text": "BLAH BLAH BLAH",
+                "bubbleType": "normal"
+              }
+            ],
+            "question": "La question 1 ici",
+            "answers": [
+              "Reponse 1",
+              "Reponse 2",
+              "Reponse 3",
+              "Reponse 4"
+            ],
+            "correctAnswerIndex": 0,
+            "time": 10,
+            "afterGoodAnswer": [
+              {
+                "text": "BLAH BLAH BLAH",
+                "bubbleType": "normal"
+              }
+            ],
+            "afterBadAnswer": [
+              {
+                "text": "BLAH BLAH BLAH",
+                "bubbleType": "normal"
+              }
+            ],
+            "qte": {
+              "beforeQTE": [
+                {
+                  "text": "BLAH BLAH BLAH",
+                  "bubbleType": "normal"
+                }
+              ],
+              "qte": "Le texte QTE ici",
+              "time": 10,
+              "afterGoodQTE": [
+                {
+                  "text": "BLAH BLAH BLAH",
+                  "bubbleType": "normal"
+                }
+              ],
+              "afterBadQTE": [
+                {
+                  "text": "BLAH BLAH BLAH",
+                  "bubbleType": "normal"
+                }
+              ]
+            }
+          },
+          {
+            "beforeQuestion": [
+              {
+                "text": "BLAH BLAH BLAH",
+                "bubbleType": "normal"
+              }
+            ],
+            "question": "La question 2 ici",
+            "answers": [
+              "Reponse 1",
+              "Reponse 2",
+              "Reponse 3",
+              "Reponse 4"
+            ],
+            "correctAnswerIndex": 0,
+            "time": 10,
+            "afterGoodAnswer": [
+              {
+                "text": "BLAH BLAH BLAH",
+                "bubbleType": "normal"
+              }
+            ],
+            "afterBadAnswer": [
+              {
+                "text": "BLAH BLAH BLAH",
+                "bubbleType": "normal"
+              }
+            ]
+          }
+        ],
         "afterInterview": [
           {
             "text": "BLAH BLAH BLAH",

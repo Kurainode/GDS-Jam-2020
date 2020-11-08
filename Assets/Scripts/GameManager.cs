@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
             }
 
 
-            SetPresident("Phone");
+            SetPresident("Telephone");
             foreach (TalkData talk in day.morningInfos)
             {
                 GameObject bubble = CreateSpeechBubble(talk, meetingBubbleArea);

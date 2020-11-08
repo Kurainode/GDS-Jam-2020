@@ -1319,12 +1319,17 @@ MonoBehaviour:
     type: 3}
   thinkingBubble: {fileID: 4735215680024501354, guid: cdcff36fe1ad68043bbd0124d6298061,
     type: 3}
+  humanBubble: {fileID: 4735215680024501354, guid: b90f70d434dbc854bbc6cca298d5a275,
+    type: 3}
   textQTE: {fileID: 8555458311723919283, guid: a9d7b78d7e5b48f4eaceff0861e46692, type: 3}
   question: {fileID: 2668811852466665484, guid: 58306cc814308ad4aab40b57b51b51a8,
     type: 3}
   background: {fileID: 554279180}
   president: {fileID: 239713273}
   closePresident: {fileID: 869255905}
+  interviewBubbleArea: {fileID: 1374822701}
+  meetingBubbleArea: {fileID: 329394160}
+  humanBubbleArea: {fileID: 912239009}
   gameData: {fileID: 4900000, guid: 1fde8f17183bc7d47914b60c38b8ff61, type: 3}
 --- !u!4 &1385955160
 Transform:

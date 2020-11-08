@@ -12,14 +12,155 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4760d66e640641f4db3ff533832a9b92, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
-  ExpandedItems: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: e4c07afe4554564794e3876df4b5161a
+    GuidInternal: 
+    m_lastTime: -8585969116275183384
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: c83fbaeacc4ad543affc1cc31c3ed3bc
+    GuidInternal: 
+    m_lastTime: -8585969116275203385
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: de0b3cb3d1c30f47b88d421a7525e937
+    GuidInternal: 
+    m_lastTime: -8585967717572919222
+    List:
+    - name: New_SoundBank
+      guid: 00265fe848a1f847b2f583c92269d212
+      id: 4072029455
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: New_SoundBank
+        ObjectType: 7
+      Path: Default Work Unit\New_SoundBank
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 3df96adc9c9ebe43afec196eea495ca3
+    GuidInternal: 
+    m_lastTime: -8585967717573019226
+    List:
+    - name: Play_Lettre_Alien_Tel
+      guid: f740b9a3c3f3994da330ae44fdf7a463
+      id: 3917145598
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Lettre_Alien_Tel
+        ObjectType: 3
+      Path: Default Work Unit\Play_Lettre_Alien_Tel
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Lettre_Humain
+      guid: 1e66d15cfb17f34a92c3e3310c6a0c7a
+      id: 2093870193
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Lettre_Humain
+        ObjectType: 3
+      Path: Default Work Unit\Play_Lettre_Humain
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Lettre_Joueur
+      guid: d563fbe67aebc64bbd6d2f8c712a964b
+      id: 1857538693
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Lettre_Joueur
+        ObjectType: 3
+      Path: Default Work Unit\Play_Lettre_Joueur
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Lettre_Joueur_Pense
+      guid: 71dae445112a6c40bb8e4a73e0c77dbc
+      id: 1614166981
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Lettre_Joueur_Pense
+        ObjectType: 3
+      Path: Default Work Unit\Play_Lettre_Joueur_Pense
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 0639c51d118d5b49a71decf1dc340f0a
+    GuidInternal: 
+    m_lastTime: -8585969116275213385
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 2a0dbd3e0d97624c9f4d7b04c7293a5d
+    GuidInternal: 
+    m_lastTime: -8585969116275193381
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 2a47d04b7a5ffb4cb973db4e2d4b263e
+    GuidInternal: 
+    m_lastTime: -8585969116275183384
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: ccfb8e3206b713428be28066ebc0a14f
+    GuidInternal: 
+    m_lastTime: -8585969116275183384
+    List: []
+  ExpandedItems:
+  - /GDS-Jam-2020_WwiseProject
+  - /GDS-Jam-2020_WwiseProject/Events
+  - /GDS-Jam-2020_WwiseProject/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
