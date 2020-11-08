@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 15}
-  m_SizeDelta: {x: -20, y: -50}
+  m_AnchoredPosition: {x: -1, y: 4.5}
+  m_SizeDelta: {x: -38, y: -61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4735215679568501788
 CanvasRenderer:
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 4735215680024501268}
   - component: {fileID: 4735215680024501270}
   m_Layer: 5
-  m_Name: Speech Bubble
+  m_Name: Telephone Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e3e3931a5485a274f99ae2a622779972, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5bed8a218da9ea94cbe3143931ffdeb4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

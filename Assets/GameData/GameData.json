@@ -53,14 +53,38 @@
         }
       ],
       "meeting": {
-        "beforeMeeting": [],
+        "beforeMeeting": [
+          {
+            "speaker": "president",
+            "text": "BLAH BLAH BLAH",
+            "bubbleType": "normal"
+          }
+        ],
         "qtes": [],
-        "afterMeeting": []
+        "afterMeeting": [
+          {
+            "speaker": "president",
+            "text": "BLAH BLAH BLAH",
+            "bubbleType": "normal"
+          }
+        ]
       },
       "interview": {
-        "beforeInterview": [],
-        "qtes": [],
-        "afterInterview": []
+        "beforeInterview": [
+          {
+            "speaker": "president",
+            "text": "BLAH BLAH BLAH",
+            "bubbleType": "normal"
+          }
+        ],
+        "questions": [],
+        "afterInterview": [
+          {
+            "speaker": "president",
+            "text": "BLAH BLAH BLAH",
+            "bubbleType": "normal"
+          }
+        ]
       }
     }
   ]
