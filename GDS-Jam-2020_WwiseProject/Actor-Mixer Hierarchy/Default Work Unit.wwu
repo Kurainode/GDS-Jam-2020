@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{85171743-F873-402F-8512-11181F805E72}" SchemaVersion="97">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{85171743-F873-402F-8512-11181F805E72}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{85171743-F873-402F-8512-11181F805E72}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Lettre_Alien_Tel" ID="{06BD095B-8B4A-4272-A772-25F6694A83BE}" ShortID="638983703">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{516E46D6-281E-4867-A3B7-A0EFD06BC0B1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EABA3FC8-4ACC-43D5-AFFC-1CC31C3ED3BC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Lettre_Alien_Tel" ID="{744C1C42-D933-45CE-9379-2CE6310F518A}">
+							<Language>SFX</Language>
+							<AudioFile>Lettre_Alien_Tel.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="736063520"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Lettre_Alien_Tel" ID="{744C1C42-D933-45CE-9379-2CE6310F518A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Lettre_Humain" ID="{8C036325-6759-4A3D-AF10-6DC3A721F6F8}" ShortID="885704631">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{516E46D6-281E-4867-A3B7-A0EFD06BC0B1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EABA3FC8-4ACC-43D5-AFFC-1CC31C3ED3BC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Lettre_Humain" ID="{3767A21A-F499-44A9-A6E3-D6ED7172F38D}">
+							<Language>SFX</Language>
+							<AudioFile>Lettre_Humain.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="922877895"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Lettre_Humain" ID="{3767A21A-F499-44A9-A6E3-D6ED7172F38D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Lettre_Joueur" ID="{CC0274DD-488D-41C2-82AC-D20537CBC895}" ShortID="753999101">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{516E46D6-281E-4867-A3B7-A0EFD06BC0B1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EABA3FC8-4ACC-43D5-AFFC-1CC31C3ED3BC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Lettre_Joueur" ID="{7E38B03B-2F06-4360-A174-4F195BCCC29B}">
+							<Language>SFX</Language>
+							<AudioFile>Lettre_Joueur.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="693023693"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Lettre_Joueur" ID="{7E38B03B-2F06-4360-A174-4F195BCCC29B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Lettre_Joueur_Pense" ID="{2464187A-B9FF-46AB-B8DD-C55051E66979}" ShortID="469139889">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{516E46D6-281E-4867-A3B7-A0EFD06BC0B1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EABA3FC8-4ACC-43D5-AFFC-1CC31C3ED3BC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Lettre_Joueur_Pense" ID="{5DBE00B7-BB07-4F6D-8F2D-54B4C6C936D5}">
+							<Language>SFX</Language>
+							<AudioFile>Lettre_Joueur_Pense.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="554538777"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Lettre_Joueur_Pense" ID="{5DBE00B7-BB07-4F6D-8F2D-54B4C6C936D5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

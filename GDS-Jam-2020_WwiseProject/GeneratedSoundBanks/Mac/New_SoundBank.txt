@@ -1,0 +1,12 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1614166981	Play_Lettre_Joueur_Pense			\Default Work Unit\Play_Lettre_Joueur_Pense	
+	1857538693	Play_Lettre_Joueur			\Default Work Unit\Play_Lettre_Joueur	
+	2093870193	Play_Lettre_Humain			\Default Work Unit\Play_Lettre_Humain	
+	3917145598	Play_Lettre_Alien_Tel			\Default Work Unit\Play_Lettre_Alien_Tel	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	554538777	Lettre_Joueur_Pense	D:\Documents + Saves\GitHub\GDS-Jam-2020\GDS-Jam-2020_WwiseProject\.cache\Mac\SFX\Lettre_Joueur_Pense_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lettre_Joueur_Pense		39504
+	693023693	Lettre_Joueur	D:\Documents + Saves\GitHub\GDS-Jam-2020\GDS-Jam-2020_WwiseProject\.cache\Mac\SFX\Lettre_Joueur_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lettre_Joueur		38716
+	736063520	Lettre_Alien_Tel	D:\Documents + Saves\GitHub\GDS-Jam-2020\GDS-Jam-2020_WwiseProject\.cache\Mac\SFX\Lettre_Alien_Tel_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lettre_Alien_Tel		19816
+	922877895	Lettre_Humain	D:\Documents + Saves\GitHub\GDS-Jam-2020\GDS-Jam-2020_WwiseProject\.cache\Mac\SFX\Lettre_Humain_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lettre_Humain		19816
+

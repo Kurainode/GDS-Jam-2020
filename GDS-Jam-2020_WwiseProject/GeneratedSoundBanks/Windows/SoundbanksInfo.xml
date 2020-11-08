@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>D:\Documents + Saves\GitHub\GDS-Jam-2020\GDS-Jam-2020_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents + Saves\GitHub\GDS-Jam-2020\GDS-Jam-2020_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents + Saves\GitHub\GDS-Jam-2020\GDS-Jam-2020_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Documents + Saves\GitHub\GDS-Jam-2020\GDS-Jam-2020_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="4204904655">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="4072029455" Language="SFX" Hash="1125608708">
+			<ObjectPath>\SoundBanks\Default Work Unit\New_SoundBank</ObjectPath>
+			<ShortName>New_SoundBank</ShortName>
+			<Path>New_SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3917145598" Name="Play_Lettre_Alien_Tel" ObjectPath="\Events\Default Work Unit\Play_Lettre_Alien_Tel" DurationType="OneShot" DurationMin="0.111610" DurationMax="0.111610">
+					<IncludedMemoryFiles>
+						<File Id="736063520" Language="SFX">
+							<ShortName>Lettre_Alien_Tel.wav</ShortName>
+							<Path>SFX\Lettre_Alien_Tel_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2093870193" Name="Play_Lettre_Humain" ObjectPath="\Events\Default Work Unit\Play_Lettre_Humain" DurationType="OneShot" DurationMin="0.111610" DurationMax="0.111610">
+					<IncludedMemoryFiles>
+						<File Id="922877895" Language="SFX">
+							<ShortName>Lettre_Humain.wav</ShortName>
+							<Path>SFX\Lettre_Humain_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1857538693" Name="Play_Lettre_Joueur" ObjectPath="\Events\Default Work Unit\Play_Lettre_Joueur" DurationType="OneShot" DurationMin="0.218753" DurationMax="0.218753">
+					<IncludedMemoryFiles>
+						<File Id="693023693" Language="SFX">
+							<ShortName>Lettre_Joueur.wav</ShortName>
+							<Path>SFX\Lettre_Joueur_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1614166981" Name="Play_Lettre_Joueur_Pense" ObjectPath="\Events\Default Work Unit\Play_Lettre_Joueur_Pense" DurationType="OneShot" DurationMin="0.223220" DurationMax="0.223220">
+					<IncludedMemoryFiles>
+						<File Id="554538777" Language="SFX">
+							<ShortName>Lettre_Joueur_Pense.wav</ShortName>
+							<Path>SFX\Lettre_Joueur_Pense_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
