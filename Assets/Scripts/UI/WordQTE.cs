@@ -25,7 +25,7 @@ public class WordQTE : MonoBehaviour
 
     void Update()
     {
-        if (m_currentText.Length < text.Length)
+        if (Time.timeScale > 0f && m_currentText.Length < text.Length)
         {
             m_currentText += Input.inputString;
             SetTextColor();

@@ -18,15 +18,19 @@ public class GameManager : MonoBehaviour
     public GameObject president;
     public GameObject closePresident;
     public GameObject music;
+    public GameObject sound;
     public GameObject gameOver;
 
     public Transform interviewBubbleArea;
     public Transform meetingBubbleArea;
     public Transform humanBubbleArea;
 
-    public Text score;
+    public PauseMenu pauseMenu;
 
-    public TextAsset gameData;
+    public Text score;
+    public Text totalScore;
+
+    public String gameData;
 
     private GameData m_gameData;
     private string[] m_backgrounds = { "Interview", "Morning", "Meeting", "Forum" };
@@ -44,121 +48,80 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        m_gameData = JsonUtility.FromJson<GameData>(gameData.text);
+        m_gameData = ScenarioLoader.Load(gameData);
+        Debug.Log(JsonUtility.ToJson(m_gameData));
         StartCoroutine("GameCoroutine");
     }
-    
+
     void Update()
     {
         m_hasClicked = false;
         if (Input.GetKeyDown(KeyCode.Mouse0))
             m_hasClicked = true;
         score.text = m_currentScore.ToString();
+        if (Input.GetKeyDown(KeyCode.Escape))
+            pauseMenu.Pause();
     }
 
     public IEnumerator GameCoroutine()
     {
-        foreach (Day day in m_gameData.days)
+        foreach (DayDataArray dayPossibilities in m_gameData.days)
         {
+            int dayIndex = UnityEngine.Random.Range(0, dayPossibilities.content.Length);
+            DayData day = dayPossibilities.content[dayIndex];
             m_currentScore = 100;
+
+            int morningIndex = UnityEngine.Random.Range(0, day.morning.Length);
+            MorningData morning = day.morning[morningIndex];
 
             SetBackground("Morning");
             m_closePresident = false;
             SetPresident("Neutral");
             SetMusic("Morning");
-            foreach (TalkData talk in day.beforeInfos)
-            {
-                GameObject bubble = CreateSpeechBubble(talk, meetingBubbleArea);
-                yield return new WaitUntil(() => m_hasClicked);
-                yield return new WaitForSeconds(0.2f);
-                Destroy(bubble);
-            }
 
-
+            PlaySound("PhoneRing");
+            yield return new WaitUntil(() => m_hasClicked);
+            yield return new WaitForSeconds(0.2f);
             SetPresident("Telephone");
-            foreach (TalkData talk in day.morningInfos)
-            {
-                GameObject bubble = CreateSpeechBubble(talk, meetingBubbleArea);
-                yield return new WaitUntil(() => m_hasClicked);
-                yield return new WaitForSeconds(0.2f);
-                Destroy(bubble);
-            }
+            yield return SpeechHandler(morning.infos, meetingBubbleArea);
+            
 
             SetPresident("Neutral");
-            foreach (TalkData talk in day.afterInfos)
-            {
-                GameObject bubble = CreateSpeechBubble(talk, meetingBubbleArea);
-                yield return new WaitUntil(() => m_hasClicked);
-                yield return new WaitForSeconds(0.2f);
-                Destroy(bubble);
-            }
+
+            int meetingIndex = UnityEngine.Random.Range(0, day.meeting.Length);
+            MeetingData meeting = day.meeting[meetingIndex];
 
             // TODO: Transition
             AutoPresident();
             SetBackground("Meeting");
             SetMusic("Meeting");
-            foreach (TalkData talk in day.meeting.beforeMeeting)
-            {
-                GameObject bubble = CreateSpeechBubble(talk, meetingBubbleArea);
-                yield return new WaitUntil(() => m_hasClicked);
-                yield return new WaitForSeconds(0.2f);
-                Destroy(bubble);
-            }
+            yield return SpeechHandler(meeting.beforeMeeting, meetingBubbleArea);
 
-            foreach (QTEData qte in day.meeting.qtes)
+            foreach (QTEData qte in meeting.qtes)
             {
-                foreach (TalkData talk in qte.beforeQTE)
-                {
-                    GameObject bubble = CreateSpeechBubble(talk, meetingBubbleArea);
-                    yield return new WaitUntil(() => m_hasClicked);
-                    yield return new WaitForSeconds(0.2f);
-                    Destroy(bubble);
-                }
+                yield return SpeechHandler(qte.beforeQTE, meetingBubbleArea);
                 m_locked = true;
                 CreateQTE(qte);
                 yield return new WaitUntil(() => !m_locked);
                 AutoPresident();
                 TalkData[] aterQTE = m_lastResult ? qte.afterGoodQTE : qte.afterBadQTE;
-                foreach (TalkData talk in aterQTE)
-                {
-                    GameObject bubble = CreateSpeechBubble(talk, meetingBubbleArea);
-                    yield return new WaitUntil(() => m_hasClicked);
-                    yield return new WaitForSeconds(0.2f);
-                    Destroy(bubble);
-                }
+                yield return SpeechHandler(aterQTE, meetingBubbleArea);
             }
+            yield return SpeechHandler(meeting.afterMeeting, meetingBubbleArea);
 
-            foreach (TalkData talk in day.meeting.afterMeeting)
-            {
-                GameObject bubble = CreateSpeechBubble(talk, meetingBubbleArea);
-                yield return new WaitUntil(() => m_hasClicked);
-                yield return new WaitForSeconds(0.2f);
-                Destroy(bubble);
-            }
+            int interviewIndex = UnityEngine.Random.Range(0, day.interview.Length);
+            InterviewData interview = day.interview[interviewIndex];
 
             // TODO: Transition
-
             m_closePresident = true;
             AutoPresident();
             SetBackground("Interview");
             SetMusic("Interview");
-            foreach (TalkData talk in day.interview.beforeInterview)
+            yield return SpeechHandler(interview.beforeInterview, interviewBubbleArea);
+            
+            foreach (QuestionData question in interview.questions)
             {
-                GameObject bubble = CreateSpeechBubble(talk, interviewBubbleArea);
-                yield return new WaitUntil(() => m_hasClicked);
-                yield return new WaitForSeconds(0.2f);
-                Destroy(bubble);
-            }
-
-            foreach (QuestionData question in day.interview.questions)
-            {
-                foreach (TalkData talk in question.beforeQuestion)
-                {
-                    GameObject bubble = CreateSpeechBubble(talk, meetingBubbleArea);
-                    yield return new WaitUntil(() => m_hasClicked);
-                    yield return new WaitForSeconds(0.2f);
-                    Destroy(bubble);
-                }
+                yield return SpeechHandler(question.beforeQuestion, interviewBubbleArea);
                 m_locked = true;
                 CreateQuestion(question);
                 yield return new WaitUntil(() => !m_locked);
@@ -171,24 +134,40 @@ public class GameManager : MonoBehaviour
                     AutoPresident();
                 }
                 TalkData[] afterQuestion = m_lastResult ? question.afterGoodAnswer : question.afterBadAnswer;
-                foreach (TalkData talk in afterQuestion)
-                {
-                    GameObject bubble = CreateSpeechBubble(talk, meetingBubbleArea);
-                    yield return new WaitUntil(() => m_hasClicked);
-                    yield return new WaitForSeconds(0.2f);
-                    Destroy(bubble);
-                }
+                yield return SpeechHandler(afterQuestion, interviewBubbleArea);
             }
-
-            foreach (TalkData talk in day.interview.afterInterview)
-            {
-                GameObject bubble = CreateSpeechBubble(talk, interviewBubbleArea);
-                yield return new WaitUntil(() => m_hasClicked);
-                yield return new WaitForSeconds(0.2f);
-                Destroy(bubble);
-            }
+            yield return SpeechHandler(interview.afterInterview, interviewBubbleArea);
 
             m_totalScore += m_currentScore;
+            totalScore.text = m_totalScore.ToString();
+        }
+        PickEnding();
+    }
+
+    public void PickEnding()
+    {
+        if (m_totalScore >= 400)
+        {
+            //Perfect Ending
+        }
+        else if (m_totalScore >= 300)
+        {
+            //Good Ending
+        }
+        else
+        {
+            //Bad Ending
+        }
+    }
+
+    public IEnumerator SpeechHandler(TalkData[] talkData, Transform bubbleArea)
+    {
+        foreach (TalkData talk in talkData)
+        {
+            GameObject bubble = CreateSpeechBubble(talk, bubbleArea);
+            yield return new WaitUntil(() => m_hasClicked);
+            yield return new WaitForSeconds(0.2f);
+            Destroy(bubble);
         }
     }
 
@@ -324,71 +303,16 @@ public class GameManager : MonoBehaviour
         gameOver.SetActive(true);
     }
 
-    public void PlaySound(string sound)
+    public void PlaySound(string name)
     {
-
+        int childCount = sound.transform.childCount;
+        for (int i = 0; i < childCount; ++i)
+        {
+            if (sound.transform.GetChild(i).name == name)
+            {
+                sound.transform.GetChild(i).gameObject.SetActive(true);
+                sound.transform.GetChild(i).GetComponent<AudioSource>().Play();
+            }
+        }
     }
-}
-
-[Serializable]
-public class GameData
-{
-    public Day[] days;
-}
-
-[Serializable]
-public class Day
-{
-    public TalkData[]  beforeInfos;
-    public TalkData[]  morningInfos;
-    public TalkData[]  afterInfos;
-    public MeetingData meeting;
-    public Interview   interview;
-}
-
-[Serializable]
-public class MeetingData
-{
-    public TalkData[] beforeMeeting;
-    public QTEData[]  qtes;
-    public TalkData[] afterMeeting;
-}
-
-[Serializable]
-public class Interview
-{
-    public TalkData[]     beforeInterview;
-    public QuestionData[] questions;
-    public TalkData[]     afterInterview;
-}
-
-[Serializable]
-public class QuestionData
-{
-    public TalkData[] beforeQuestion;
-    public string     question;
-    public string[]   answers;
-    public int        correctAnswerIndex;
-    public int        time;
-    public TalkData[] afterGoodAnswer;
-    public TalkData[] afterBadAnswer;
-    public QTEData    qte;
-}
-
-[Serializable]
-public class QTEData
-{
-    public TalkData[] beforeQTE;
-    public int        time;
-    public string     qte;
-    public TalkData[] afterGoodQTE;
-    public TalkData[] afterBadQTE;
-}
-
-[Serializable]
-public class TalkData
-{
-    public string speaker;
-    public string text;
-    public string bubbleType;
 }
