@@ -3,7 +3,7 @@ using System;
 /**
  * The data representation of a save.
  * scenario: scenario file used
- * state: current position in GameData (exemple: "root/1/content/0/morning/infos/2")
+ * state: current position in GameData (exemple: "0/1/content/0/morning/1/infos/2")
  * name: The player's name
  * score: current day score
  * totalScore: the total score
@@ -27,7 +27,20 @@ public class SaveFile
 [Serializable]
 public class OptionsFile
 {
-    public float soundVolume;
-    public int resolutionIndex;
-    public float textSpeed;
+    public float soundVolume = 1.0f;
+    public int resolutionIndex = 0;
+    public float textSpeed = 20.0f;
+}
+
+[Serializable]
+public class ScoreFile
+{
+    public Score[] scores;
+}
+
+[Serializable]
+public class Score
+{
+    public string playerName;
+    public int score;
 }

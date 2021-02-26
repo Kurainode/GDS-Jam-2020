@@ -13,7 +13,6 @@ public class VolumeSlider : MonoBehaviour
 
     private void Start()
     {
-        slider.value = AudioListener.volume;
         slider.onValueChanged.AddListener((x) => value.text = x.ToString("F2"));
         slider.onValueChanged.AddListener((x) => volumeChanged.Invoke(x));
         value.text = slider.value.ToString("F2");

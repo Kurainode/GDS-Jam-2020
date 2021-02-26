@@ -1,0 +1,200 @@
+{
+    "beforeInterview": [
+        {
+            "text": "I better stay focused. It may be hard.",
+            "bubbleType": "thinking"
+        },
+        {
+            "text": "Hey, Mr \"Totally-not-an-alien\" President! Yes, i'm sure you're an alien! And I'm going to prove it!",
+            "bubbleType": "human"
+        },
+        {
+            "text": "I definively am a human being.",
+            "bubbleType": "normal"
+        },
+        {
+            "text": "Well, answer that: Why should we even color our hair green?",
+            "bubbleType": "human"
+        }
+    ],
+    "questions": [
+        {
+            "beforeQuestion": [],
+            "question": "Why should we even color our hair green?",
+            "answers": [
+                "It makes you intelligent, plus it is trendy.",
+                "It makes you stronger.",
+                "It is nice looking, do it.",
+                "I have natural green hair."
+            ],
+            "correctAnswerIndex": 0,
+            "time": 10,
+            "afterGoodAnswer": [
+                {
+                    "text": "It makes you intelligent, plus it is trendy. Why wouldn't you want green hair? It's the best!",
+                    "bubbleType": "normal"
+                }
+            ],
+            "afterBadAnswer": [
+                {
+                    "text": "Huh ?",
+                    "bubbleType": "human"
+                }
+            ],
+            "qte": {
+                "beforeQTE": [
+                    {
+                        "text": "Uh, it's not what I meant! It makes you ",
+                        "bubbleType": "normal"
+                    }
+                ],
+                "qte": "intelligent and trendy",
+                "time": 10,
+                "afterGoodQTE": [
+                    {
+                        "text": "Yes, it makes you intelligent, plus it is trendy. Why wouldn't you want green hair? It's the best!",
+                        "bubbleType": "normal"
+                    }
+                ],
+                "afterBadQTE": [
+                    {
+                        "text": "That's what an alien would say!",
+                        "bubbleType": "human"
+                    },
+                    {
+                        "text": "Ahah... I meant intelligent ! It makes you intelligent and trendy!",
+                        "bubbleType": "normal"
+                    },
+                    {
+                        "text": "I need to be careful...",
+                        "bubbleType": "thinking"
+                    }
+                ]
+            }
+        },
+        {
+            "beforeQuestion": [
+                {
+                    "text": "Oh! So I'm sure a scientist told you that. Who? Give us a name!",
+                    "bubbleType": "human"
+                }
+            ],
+            "question": "Can you give us a name?",
+            "answers": [
+                "Jane Intelligent",
+                "Alfred Goldenhair",
+                "John Silvercut",
+                "Julius Bronze"
+            ],
+            "correctAnswerIndex": 0,
+            "time": 10,
+            "afterGoodAnswer": [
+                {
+                    "text": "Jane Intelligent, yes. She is... Hum... Intelligent.",
+                    "bubbleType": "normal"
+                }
+            ],
+            "afterBadAnswer": [
+                {
+                    "text": "Really?",
+                    "bubbleType": "human"
+                }
+            ],
+            "qte": {
+                "beforeQTE": [
+                    {
+                        "text": "Uh, it's not what I meant! I meant Jane Intelligent! She's a",
+                        "bubbleType": "normal"
+                    }
+                ],
+                "qte": "cool genius",
+                "time": 10,
+                "afterGoodQTE": [
+                    {
+                        "text": "She's cool and a genius. She knows that science stuff!",
+                        "bubbleType": "normal"
+                    }
+                ],
+                "afterBadQTE": [
+                    {
+                        "text": "That's what an alien would say!!!",
+                        "bubbleType": "human"
+                    },
+                    {
+                        "text": "Erm... I meant... She's cool and a genius. She knows that science stuff!",
+                        "bubbleType": "normal"
+                    },
+                    {
+                        "text": "I need to be careful...",
+                        "bubbleType": "thinking"
+                    }
+                ]
+            }
+        },
+        {
+            "beforeQuestion": [
+                {
+                    "text": "Yeah, right... And why is your skin so strange?",
+                    "bubbleType": "human"
+                }
+            ],
+            "question": "Why is your skin so strange?",
+            "answers": [
+                "I tanned",
+                "Because of my hair",
+                "My skin is perfectly normal",
+                "Because I'm not an alien"
+            ],
+            "correctAnswerIndex": 0,
+            "time": 10,
+            "afterGoodAnswer": [
+                {
+                    "text": "Because of the sun! Did you not listen to my interview two days ago?",
+                    "bubbleType": "normal"
+                }
+            ],
+            "afterBadAnswer": [
+                {
+                    "text": "You what?",
+                    "bubbleType": "human"
+                }
+            ],
+            "qte": {
+                "beforeQTE": [
+                    {
+                        "text": "Uh, it's not what I meant! I meant, I",
+                        "bubbleType": "normal"
+                    }
+                ],
+                "qte": "tanned a little",
+                "time": 10,
+                "afterGoodQTE": [
+                    {
+                        "text": "It's probably because of the sun. I think I tanned a little. Did you not listen to my interview two days ago?",
+                        "bubbleType": "normal"
+                    }
+                ],
+                "afterBadQTE": [
+                    {
+                        "text": "You're an alien!!!",
+                        "bubbleType": "human"
+                    },
+                    {
+                        "text": "Erm... No... It's probably because of the sun. I think I tanned a little. Did you not listen to my interview two days ago?",
+                        "bubbleType": "normal"
+                    },
+                    {
+                        "text": "I need to be careful...",
+                        "bubbleType": "thinking"
+                    }
+                ]
+            }
+        }
+    ],
+    "afterInterview": [
+        {
+            "text": "Alright, maybe you're not an alien. I hope trusting you is a good choice...",
+            "bubbleType": "human"
+        }
+    ]
+}

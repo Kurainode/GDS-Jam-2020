@@ -1,0 +1,76 @@
+{
+    "beforeMeeting": [
+        {
+            "text": "I have to do this right. It will probably be harder today. On we go. ",
+            "bubbleType": "thinking"
+        }
+    ],
+    "qtes": [
+        {
+            "beforeQTE": [
+                {
+                    "text": "My dear fellow citizen, I'm glad te be here today! Do you want to know my",
+                    "bubbleType": "normal"
+                }
+            ],
+            "qte": "big secret",
+            "time": 10,
+            "afterGoodQTE": [
+                {
+                    "text": "I actually have green hair! You don't see it, because I colored them.",
+                    "bubbleType": "normal"
+                }
+            ],
+            "afterBadQTE": [
+                {
+                    "text": "What?",
+                    "bubbleType": "human"
+                },
+                {
+                    "text": "I meant... Erm... I actually have green hair! You don't see it, because I colored them.",
+                    "bubbleType": "normal"
+                }
+            ]
+        },
+        {
+            "beforeQTE": [
+                {
+                    "text": "It is what makes me truely",
+                    "bubbleType": "normal"
+                }
+            ],
+            "qte": "smart and sexy",
+            "time": 10,
+            "afterGoodQTE": [
+                {
+                    "text": "Plus, it is totally trendy and cool to have green hair!",
+                    "bubbleType": "normal"
+                },
+                {
+                    "text": "Well, that's all, folks! See you next time!",
+                    "bubbleType": "normal"
+                }
+            ],
+            "afterBadQTE": [
+                {
+                    "text": "What?",
+                    "bubbleType": "human"
+                },
+                {
+                    "text": "I meant... Erm... It is totally trendy and cool to have green hair!",
+                    "bubbleType": "normal"
+                },
+                {
+                    "text": "Well, that's all, folks! See you next time!",
+                    "bubbleType": "normal"
+                }
+            ]
+        }
+    ],
+    "afterMeeting": [
+        {
+            "text": "Tonight I am being interviewed by Austin Foilhat. This human smells trouble...",
+            "bubbleType": "thinking"
+        }
+    ]
+}

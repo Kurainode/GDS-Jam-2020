@@ -9,6 +9,8 @@ public class SpeechBubble : MonoBehaviour
     public string text;
     public float textSpeed;
 
+    public bool Finished { get; private set; }
+
     private float m_carret;
     private AudioSource m_audioSource;
     private float m_deltaTime;
@@ -45,5 +47,13 @@ public class SpeechBubble : MonoBehaviour
             }
             yield return null;
         }
+        Finished = true;
+    }
+
+    public void Skip()
+    {
+        m_carret = text.Length;
+        content.text = text;
+        Finished = true;
     }
 }

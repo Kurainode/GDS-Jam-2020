@@ -53,8 +53,10 @@ public static class ScenarioLoader
         T assetData;
         try
         {
-            Debug.Log("/GameData/" + assetFolder + "/" + assetName + ".json");
-            string asset = File.ReadAllText(Application.persistentDataPath + "/GameData/" + assetFolder + "/" + assetName + ".json");
+            if (assetFolder.Length > 0)
+                assetFolder += "/";
+            Debug.Log("/GameData/" + assetFolder + assetName + ".json");
+            string asset = File.ReadAllText(Application.persistentDataPath + "/GameData/" + assetFolder + assetName + ".json");
             assetData = JsonUtility.FromJson<T>(asset);
         }
         catch (Exception)

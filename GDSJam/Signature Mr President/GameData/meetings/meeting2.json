@@ -1,0 +1,76 @@
+{
+    "beforeMeeting": [
+        {
+            "text": "I have to do this right. On we go. ",
+            "bubbleType": "thinking"
+        }
+    ],
+    "qtes": [
+        {
+            "beforeQTE": [
+                {
+                    "text": "My dear fellow citizen, I know you missed me! I have great",
+                    "bubbleType": "normal"
+                }
+            ],
+            "qte": "news",
+            "time": 10,
+            "afterGoodQTE": [
+                {
+                    "text": "I intend to build an \"Ultra Space Flying Car\" to go and house every human on Jupiter!",
+                    "bubbleType": "normal"
+                }
+            ],
+            "afterBadQTE": [
+                {
+                    "text": "What?",
+                    "bubbleType": "human"
+                },
+                {
+                    "text": "I meant... Erm... I intend to build an \"Ultra Space Flying Car\" to go and house every human on Jupiter!",
+                    "bubbleType": "normal"
+                }
+            ]
+        },
+        {
+            "beforeQTE": [
+                {
+                    "text": "I'm sure it's going to be a good change of ",
+                    "bubbleType": "normal"
+                }
+            ],
+            "qte": "scenery",
+            "time": 10,
+            "afterGoodQTE": [
+                {
+                    "text": "It will be great for you - I mean for us! ",
+                    "bubbleType": "normal"
+                },
+                {
+                    "text": "The spaceship will be ready next Friday! Aren't you excited? You're welcome. Now let's go eat.",
+                    "bubbleType": "normal"
+                }
+            ],
+            "afterBadQTE": [
+                {
+                    "text": "What?",
+                    "bubbleType": "human"
+                },
+                {
+                    "text": "I meant... Erm... You know, It will be great for you - I mean for us!",
+                    "bubbleType": "normal"
+                },
+                {
+                    "text": "The spaceship will be ready next Friday! Aren't you excited? You're welcome. Now let's go eat.",
+                    "bubbleType": "normal"
+                }
+            ]
+        }
+    ],
+    "afterMeeting": [
+        {
+            "text": "Tonight I am being interviewed by John McScience. Better be prepared.",
+            "bubbleType": "thinking"
+        }
+    ]
+}

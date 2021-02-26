@@ -9,16 +9,16 @@ public class ActionDelegate : Delegate
     [SerializeField]
     public List<CharacterPair> characters;
 
-    private Dictionary<string, Character> m_characters;
+    private Dictionary<string, Character> m_characters = new Dictionary<string, Character>();
 
-    private Dictionary<string, List<Dropdown.OptionData>> m_dropdownActions;
+    private Dictionary<string, List<Dropdown.OptionData>> m_dropdownActions = new Dictionary<string, List<Dropdown.OptionData>>();
 
     public Dropdown character;
     public Dropdown action;
 
     private Action m_data;
     
-    void Start()
+    void Awake()
     {
         characters.ForEach(x => {
             m_characters.Add(x.Key, x.Value);

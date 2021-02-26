@@ -1,0 +1,1 @@
+{"infos":[{"preActions":[],"speaker":"president","text":"Bonjour, je suis une bulle.","bubbleType":"normal","postActions":[]},{"preActions":[{"character":"President","action":"PhoneRing"},{"character":"President","action":"Telephone"}],"speaker":"president","text":"Bonjour","bubbleType":"phone","postActions":[{"character":"President","action":"PhoneHang"}]}]}

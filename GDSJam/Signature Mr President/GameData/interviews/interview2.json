@@ -1,0 +1,192 @@
+{
+    "beforeInterview": [
+        {
+            "text": "This human seems to be smarter than the average human.",
+            "bubbleType": "thinking"
+        },
+        {
+            "text": "Welcome Mr President! I'd like to ask you from the start, you know that  your project to travel to Jupiter is impossible right?",
+            "bubbleType": "human"
+        }
+    ],
+    "questions": [
+        {
+            "beforeQuestion": [],
+            "question": "Your project is impossible !",
+            "answers": [
+                "It is, my scientists told me so",
+                "I know, great joke, right?.",
+                "I know what I'm doing",
+                "Come on, don't be the party pooper"
+            ],
+            "correctAnswerIndex": 0,
+            "time": 10,
+            "afterGoodAnswer": [
+                {
+                    "text": "My scientists in very white coats are advising me. It will happen.",
+                    "bubbleType": "normal"
+                }
+            ],
+            "afterBadAnswer": [
+                {
+                    "text": "Huh ?",
+                    "bubbleType": "human"
+                }
+            ],
+            "qte": {
+                "beforeQTE": [
+                    {
+                        "text": "Uh, it's not what I meant! I am advised by ",
+                        "bubbleType": "normal"
+                    }
+                ],
+                "qte": "scientists",
+                "time": 10,
+                "afterGoodQTE": [
+                    {
+                        "text": "Yes, scientists in very white coats, I can tell you that !",
+                        "bubbleType": "normal"
+                    }
+                ],
+                "afterBadQTE": [
+                    {
+                        "text": "Are you alright?",
+                        "bubbleType": "human"
+                    },
+                    {
+                        "text": "Ahah... I meant scientists ! Ones in very white coats, indeed.",
+                        "bubbleType": "normal"
+                    },
+                    {
+                        "text": "I need to be careful...",
+                        "bubbleType": "thinking"
+                    }
+                ]
+            }
+        },
+        {
+            "beforeQuestion": [
+                {
+                    "text": "Oh! So experts are working hard to achieve this project. Who are they ? Can you give us a name?",
+                    "bubbleType": "human"
+                }
+            ],
+            "question": "Can you give us a name?",
+            "answers": [
+                "Johnny Veryclever",
+                "Jean Average",
+                "Mark Poker",
+                "Gabe Newell"
+            ],
+            "correctAnswerIndex": 0,
+            "time": 10,
+            "afterGoodAnswer": [
+                {
+                    "text": "Johnny Veryclever, yes. He is... Hum... Very clever.",
+                    "bubbleType": "normal"
+                }
+            ],
+            "afterBadAnswer": [
+                {
+                    "text": "Really?",
+                    "bubbleType": "human"
+                }
+            ],
+            "qte": {
+                "beforeQTE": [
+                    {
+                        "text": "Uh, it's not what I meant! I meant John",
+                        "bubbleType": "normal"
+                    }
+                ],
+                "qte": "veryclever",
+                "time": 10,
+                "afterGoodQTE": [
+                    {
+                        "text": "Johnny Veryclever, yes. He is... Hum... Very clever.",
+                        "bubbleType": "normal"
+                    }
+                ],
+                "afterBadQTE": [
+                    {
+                        "text": "Are you alright?",
+                        "bubbleType": "human"
+                    },
+                    {
+                        "text": "Erm... I meant Johnny Veryclever, yes. He is... Hum... Very clever.",
+                        "bubbleType": "normal"
+                    },
+                    {
+                        "text": "I need to be careful...",
+                        "bubbleType": "thinking"
+                    }
+                ]
+            }
+        },
+        {
+            "beforeQuestion": [
+                {
+                    "text": "Johnny Veryclever... Alright... And what are his qualifications?",
+                    "bubbleType": "human"
+                }
+            ],
+            "question": "What are his qualifications?",
+            "answers": [
+                "He's got, like... 3 Ph.D",
+                "He's self taugh",
+                "He's the smartest alien I know",
+                "I didn't ask, I gathered him in the streets"
+            ],
+            "correctAnswerIndex": 0,
+            "time": 10,
+            "afterGoodAnswer": [
+                {
+                    "text": "He's got, like... 3 Ph.D or something.",
+                    "bubbleType": "normal"
+                }
+            ],
+            "afterBadAnswer": [
+                {
+                    "text": "Really?",
+                    "bubbleType": "human"
+                }
+            ],
+            "qte": {
+                "beforeQTE": [
+                    {
+                        "text": "Uh, it's not what I meant! Actually he has many Ph.D, he is very ",
+                        "bubbleType": "normal"
+                    }
+                ],
+                "qte": "intelligent",
+                "time": 10,
+                "afterGoodQTE": [
+                    {
+                        "text": "Yes, very intelligent.",
+                        "bubbleType": "normal"
+                    }
+                ],
+                "afterBadQTE": [
+                    {
+                        "text": "Are you alright?",
+                        "bubbleType": "human"
+                    },
+                    {
+                        "text": "Erm... I meant very intelligent, yes.",
+                        "bubbleType": "normal"
+                    },
+                    {
+                        "text": "Phew... It's the end",
+                        "bubbleType": "thinking"
+                    }
+                ]
+            }
+        }
+    ],
+    "afterInterview": [
+        {
+            "text": "Alright, thank you for coming, Mr President. I hope you join us tomorrow! The interviewer will be Austin Foilhat. Ladies and gentlemen thank you for watching us, goodnight!",
+            "bubbleType": "human"
+        }
+    ]
+}

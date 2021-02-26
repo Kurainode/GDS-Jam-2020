@@ -1,0 +1,67 @@
+{
+    "infos": [
+        {
+            "preActions": [
+                {
+                    "character": "President",
+                    "action": "PhoneRing"
+                },
+                {
+                    "character": "President",
+                    "action": "Telephone"
+                }
+            ],
+            "speaker": "president",
+            "text": "Greetings. Are you holding up in your disguise? This mission is a first for our kind. Don't fail.",
+            "bubbleType": "phone",
+            "postActions": []
+        },
+        {
+            "preActions": [],
+            "speaker": "",
+            "text": "So here's the situation: you'll have to distract them while we get everything ready for the invasion",
+            "bubbleType": "phone",
+            "postActions": []
+        },
+        {
+            "preActions": [],
+            "speaker": "",
+            "text": "In the morning you will have to go to meetings. We don't really  know what they are for but humans like them. Say anything that goes through your mind. But don't be suspicious.",
+            "bubbleType": "phone",
+            "postActions": []
+        },
+        {
+            "preActions": [],
+            "speaker": "",
+            "text": "In the evening you will have interviews. Humans will ask you all sorts of questions. Don't worry, we will give you every info we gather in the morning, before your meetings. Don't forget them.",
+            "bubbleType": "phone",
+            "postActions": []
+        },
+        {
+            "preActions": [],
+            "speaker": "",
+            "text": "Humans will probably notice a change in the appearance of their president. Our research shows that humans like to damage their skin by staying still under direct sunbeams. It changes the color of their skin. Remember that.",
+            "bubbleType": "phone",
+            "postActions": []
+        },
+        {
+            "preActions": [],
+            "speaker": "president",
+            "text": "The success of our mission depends on you. Good Luck. *Clic*",
+            "bubbleType": "phone",
+            "postActions": [
+                {
+                    "character": "President",
+                    "action": "PhoneHang"
+                }
+            ]
+        },
+        {
+            "preActions": [],
+            "speaker": "president",
+            "text": "Let's do this",
+            "bubbleType": "thinking",
+            "postActions": []
+          }
+    ]
+}

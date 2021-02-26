@@ -57,6 +57,7 @@ public class Question : MonoBehaviour
                 answers[i].GetComponent<Image>().color = Color.red;
             answers[i].GetComponent<Button>().enabled = false;
         }
+        SoundManager.PlaySound("AnswerGood");
         Invoke("CorrectDestroy", 2);
     }
 
@@ -71,6 +72,7 @@ public class Question : MonoBehaviour
                 answers[i].GetComponent<Image>().color = Color.red;
             answers[i].GetComponent<Button>().enabled = false;
         }
+        SoundManager.PlaySound("AnswerBad");
         Invoke("IncorrectDestroy", 1.5f);
     }
 

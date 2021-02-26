@@ -2982,9 +2982,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194c3324647d9974bafb4b216a7a3da6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 397167933}
-  textQTE: {fileID: 8555458311723919283, guid: a9d7b78d7e5b48f4eaceff0861e46692, type: 3}
-  question: {fileID: 2668811852466665484, guid: 58306cc814308ad4aab40b57b51b51a8, type: 3}
   background: {fileID: 554279180}
   objectDisplayer: {fileID: 141205699}
   settings: {fileID: 0}
@@ -4667,6 +4664,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3912898025561767544, guid: eb7819df07b8a7440a020f88ec022356, type: 3}
+      propertyPath: characters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912898025561767544, guid: eb7819df07b8a7440a020f88ec022356, type: 3}
+      propertyPath: characters.Array.data[0].Value
+      value: 
+      objectReference: {fileID: 2523916752846958200, guid: fa2b67d814882ed4089c85791614ac57, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb7819df07b8a7440a020f88ec022356, type: 3}
 --- !u!1001 &8027427353900059194

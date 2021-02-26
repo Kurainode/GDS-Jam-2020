@@ -1,0 +1,71 @@
+{
+    "infos": [
+        {
+            "text": "This is the last day i've got to convince humans! I better get this right.",
+            "bubbleType": "normal"
+        },
+        {
+            "preActions": [
+                {
+                    "character": "President",
+                    "action": "PhoneRing"
+                },
+                {
+                    "character": "President",
+                    "action": "Telephone"
+                }
+            ],
+            "speaker": "president",
+            "text": "Greetings. This is the last time you'll have to do this job. After today, our plan will come to fruitition...",
+            "bubbleType": "phone",
+            "postActions": []
+        },
+        {
+            "text": "Well, that's only if you succeed today.",
+            "bubbleType": "phone"
+        },
+        {
+            "text": "After most humans have left for Jupiter, we will engage for battle. However, we want things to go as smooth as possible.",
+            "bubbleType": "phone"
+        },
+        {
+            "text": "Our new mind control weapon will be used. But it has a flaw: It only works on humans with green hair.",
+            "bubbleType": "phone"
+        },
+        {
+            "text": "Oh...",
+            "bubbleType": "normal"
+        },
+        {
+            "text": "As you probably guessed, you will have to convince them to change their hair color.",
+            "bubbleType": "phone"
+        },
+        {
+            "text": "How?",
+            "bubbleType": "normal"
+        },
+        {
+            "text": "You seem to be pretty popular already. Just tell them that it is trendy, or maybe that it will increase their intelligence. It's up to you.",
+            "bubbleType": "phone"
+        },
+        {
+            "preActions": [],
+            "speaker": "president",
+            "text": "By the way, our scientists discovered a bug in our disguise software. You must avoid to say metal names. That's it for today. Good Luck. *Clic*",
+            "bubbleType": "phone",
+            "postActions": [
+                {
+                    "character": "President",
+                    "action": "PhoneHang"
+                }
+            ]
+        },
+        {
+            "preActions": [],
+            "speaker": "president",
+            "text": "Let's do this",
+            "bubbleType": "thinking",
+            "postActions": []
+        }
+    ]
+}

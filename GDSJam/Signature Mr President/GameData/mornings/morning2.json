@@ -1,0 +1,55 @@
+{
+    "infos": [
+        {
+            "preActions": [
+                {
+                    "character": "President",
+                    "action": "PhoneRing"
+                },
+                {
+                    "character": "President",
+                    "action": "Telephone"
+                }
+            ],
+            "speaker": "president",
+            "text": "Greetings. We need you to keep going to meetings and interviews today. Don't be suspicious and everything will go well.",
+            "bubbleType": "phone",
+            "postActions": []
+        },
+        {
+            "text": "We are still working on our plan. However, humans are too many. We need to send them away so we can take Earth.",
+            "bubbleType": "phone"
+        },
+        {
+            "text": "We are going to build a spaceship to send humans in space. You must convince them to go.",
+            "bubbleType": "phone"
+        },
+        {
+            "text": "How will I convince them ?",
+            "bubbleType": "normal"
+        },
+        {
+            "text": "We noticed that humans will trust anyone that wears a white uniform. Tell them that someone in white uniform is working on the project. Humans like names. Try to find a name that sounds very clever.  ",
+            "bubbleType": "phone"
+        },
+        {
+            "preActions": [],
+            "speaker": "president",
+            "text": "Also, it seems that they judge intelligence by something they call a Ph.D. The more they have, the better. That's it for today. Good Luck. *Clic*",
+            "bubbleType": "phone",
+            "postActions": [
+                {
+                    "character": "President",
+                    "action": "PhoneHang"
+                }
+            ]
+        },
+        {
+            "preActions": [],
+            "speaker": "president",
+            "text": "Let's do this",
+            "bubbleType": "thinking",
+            "postActions": []
+        }
+    ]
+}

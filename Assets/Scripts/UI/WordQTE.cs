@@ -54,6 +54,7 @@ public class WordQTE : MonoBehaviour
                     StartCoroutine("FadeOut");
             }
         }
+        SoundManager.PlaySound("AnswerBad");
         onEnded.Invoke(false);
         Destroy(gameObject);
     }
@@ -106,6 +107,7 @@ public class WordQTE : MonoBehaviour
     {
         if (text.ToLower() == m_currentText.ToLower())
         {
+            SoundManager.PlaySound("AnswerGood");
             onEnded.Invoke(true);
             Destroy(gameObject);
         }
